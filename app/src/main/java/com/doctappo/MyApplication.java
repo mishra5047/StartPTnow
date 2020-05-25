@@ -1,9 +1,8 @@
 package com.doctappo;
 
-import android.app.Application;
 import android.content.res.Configuration;
-import android.support.multidex.MultiDex;
-import android.support.multidex.MultiDexApplication;
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
 
 import util.CommonClass;
 

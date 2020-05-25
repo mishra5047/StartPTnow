@@ -4,16 +4,13 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.daimajia.swipe.util.Attributes;
@@ -33,7 +30,6 @@ import java.util.Locale;
 import Config.ApiParams;
 import adapters.MyAppointmentAdapter;
 import models.AppointmentModel;
-import models.ServicesModel;
 import util.CommonClass;
 import util.SwipeDetector;
 import util.VJsonRequest;

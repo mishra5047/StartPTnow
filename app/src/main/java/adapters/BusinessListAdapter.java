@@ -2,7 +2,7 @@ package adapters;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.doctappo.CommonActivity;
 import com.doctappo.DetailsSalonActivity;
-import com.doctappo.ListActivity;
 import com.doctappo.R;
 import com.squareup.picasso.Picasso;
 

@@ -1,13 +1,12 @@
 package com.doctappo;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.EditText;
 
 import com.google.gson.Gson;
@@ -21,9 +20,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import Config.ApiParams;
-import adapters.CategoryAdapter;
 import adapters.LocalityAdapter;
-import models.CategoryModel;
 import models.LocalityModel;
 import util.VJsonRequest;
 

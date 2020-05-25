@@ -1,13 +1,12 @@
 package com.doctappo;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -51,14 +50,14 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
         txtBusinessName = (TextView) findViewById(R.id.textBusinessName);
         imageView = (ImageView) findViewById(R.id.logoImage);
 
-        txtAmount.setText(String.valueOf(common.get_service_total_amount() + Double.valueOf(selected_business.getBus_fee())));
-        txtTotalTime.setText(common.get_service_total_times_string());
-        Picasso.with(this).load(ConstValue.BASE_URL + "/uploads/business/" + ActiveModels.BUSINESS_MODEL.getBus_logo()).into(imageView);
-        txtBusinessName.setText(ActiveModels.BUSINESS_MODEL.getBus_title());
+//        txtAmount.setText(String.valueOf(common.get_service_total_amount() + Double.parseDouble(selected_business.getBus_fee())));
+//        txtTotalTime.setText(common.get_service_total_times_string());
+//        Picasso.with(this).load(ConstValue.BASE_URL + "/uploads/business/" + ActiveModels.BUSINESS_MODEL.getBus_logo()).into(imageView);
+//        txtBusinessName.setText(ActiveModels.BUSINESS_MODEL.getBus_title());
 
-        txtDate.setText(getString(R.string.date) + " : " + getIntent().getExtras().getString("date"));
-        txtTimeSlot.setText(getString(R.string.time) + " : " + getIntent().getExtras().getString("timeslot"));
-
+//        txtDate.setText(getString(R.string.date) + " : " + getIntent().getExtras().getString("date"));
+//        txtTimeSlot.setText(getString(R.string.time) + " : " + getIntent().getExtras().getString("timeslot"));
+//
 
         Spinner spinner = findViewById(R.id.spinner);
         spinner.setOnItemSelectedListener(this);
@@ -75,7 +74,6 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
     public void orderFinish(View view) {
         ActiveModels.reset();
         Intent intent = new Intent(ThanksActivity.this, MainActivity.class);
-
         startActivity(intent);
         finish();
     }
@@ -84,7 +82,6 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
     public void myOrderActivity(View view) {
         ActiveModels.reset();
         Intent intent = new Intent(ThanksActivity.this, MyAppointmentsActivity.class);
-
         startActivity(intent);
         finish();
     }
@@ -108,6 +105,7 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
             rv_point.setAdapter(bulletTextAdapter);
+            txt.setMaxLines(0);
         }
 
         else if (position == 2){
@@ -120,6 +118,7 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
             rv_point.setAdapter(bulletTextAdapter);
+            txt.setMaxLines(0);
         }
 
         else if (position == 3){
@@ -132,6 +131,7 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
             rv_point.setAdapter(bulletTextAdapter);
+            txt.setMaxLines(0);
         }
 
         else if (position == 4){
@@ -143,12 +143,12 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
             rv_point.setAdapter(bulletTextAdapter);
+            txt.setMaxLines(0);
         }
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-
+        Toast.makeText(ThanksActivity.this, "Select Your Insurance Type", Toast.LENGTH_LONG).show();
     }
-
 }

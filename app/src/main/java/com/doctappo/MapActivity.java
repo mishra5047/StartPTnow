@@ -1,7 +1,7 @@
 package com.doctappo;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,12 +10,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import models.ActiveModels;
 import models.BusinessModel;
-import util.CommonClass;
 import util.GPSTracker;
 
 public class MapActivity extends CommonActivity implements OnMapReadyCallback {

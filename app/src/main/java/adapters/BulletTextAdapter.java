@@ -3,27 +3,20 @@ package adapters;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.Html;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.URLUtil;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.doctappo.CommonActivity;
-import com.doctappo.ListActivity;
 import com.doctappo.R;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import Config.ConstValue;
-import models.ActiveModels;
 import models.BulletTextModel;
-import models.CategoryModel;
 
 
 /**

@@ -1,12 +1,11 @@
 package adapters;
 
 import android.app.Activity;
-import android.graphics.Typeface;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -14,13 +13,9 @@ import android.widget.TextView;
 import com.doctappo.R;
 import com.squareup.picasso.Picasso;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 import Config.ConstValue;
-import models.PhotosModel;
 import models.ReviewsModel;
 import util.CommonClass;
 
