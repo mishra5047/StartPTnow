@@ -78,28 +78,16 @@
 
             </LinearLayout>
 
-            <ProgressBar
-                android:id="@+id/progressBar1"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:max="500"
-                android:progress="0" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
                 <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <RelativeLayout
                         android:id="@+id/servicesLay"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="45dp"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="30dp"
@@ -118,7 +106,7 @@
                     <RelativeLayout
                         android:id="@+id/patLogin"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="45dp"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginRight="30dp"
@@ -137,7 +125,7 @@
                     <RelativeLayout
                         android:id="@+id/makeAppointment"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="45dp"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginRight="30dp"
@@ -157,8 +145,8 @@
                         android:layout_width="250dp"
                         android:layout_height="250dp"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/logo_company"/>
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/logo_company_transparent"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -171,38 +159,40 @@
                         android:id="@+id/registerTxt"
                         />
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal"
                         android:background="#121c2a"
                         >
 
                         <ImageView
                             android:id="@+id/instagram"
+                            android:layout_centerVertical="true"
                             android:layout_width="50dp"
+                            android:layout_toLeftOf="@id/twitter"
+                            android:layout_marginRight="50dp"
                             android:layout_height="50dp"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="70dp"
                             android:src="@drawable/instagram_green"/>
 
                         <ImageView
                             android:id="@+id/twitter"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="60dp"
+                            android:layout_centerInParent="true"
                             android:src="@drawable/twitter_green"/>
 
                         <ImageView
                             android:id="@+id/facebook"
+                            android:layout_toRightOf="@id/twitter"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="50dp"
                             android:src="@drawable/facebook_green"/>
-                    </LinearLayout>
+                    </RelativeLayout>
 
                     <TextView
                         android:id="@+id/idWeb"
@@ -215,7 +205,6 @@
                         android:background="#10ebe1"
                         />
                 </LinearLayout>
-            </ScrollView>
         </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

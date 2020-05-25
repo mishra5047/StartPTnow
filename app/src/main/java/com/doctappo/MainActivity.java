@@ -77,6 +77,7 @@ public class MainActivity extends CommonActivity implements NavigationView.OnNav
                 startActivity(intent);
             }
         });
+
         services = findViewById(R.id.servicesLay);
         services.setOnClickListener(new View.OnClickListener() {
             @Override

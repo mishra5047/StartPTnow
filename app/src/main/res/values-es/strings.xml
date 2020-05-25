@@ -136,7 +136,6 @@
     <string name="is_still_not_verified_please_click_on_verification_link_sent_to_your_email_you_may_check_in_inbox_or_spam_folder">aún no está verificado, haga clic en el enlace de verificación enviado a su correo electrónico. Puede verificar en la bandeja de entrada o carpeta de spam.</string>
     <string name="patient_application"><![CDATA[<font color=\'#3dcdad\'>Solicitud de paciente</font>]]></string>
     <string name="photo_id">identificación fotográfica</string>
-    <string name="prescription_doctor_referral">Prescripción / referencia médica</string>
     <string name="insurance_card_if_applicable">Tarjeta de seguro (si corresponde)</string>
     <string name="a_a_form_auto_accidents"><![CDATA[<font color=\'#3dcdad\'>Formulario A y A (accidentes automovilísticos)</font>]]></string>
     <string name="pip_application_if_applicable"><![CDATA[<font color=\'#3dcdad\'>Solicitud PIP (si corresponde)</font>]]></string>

@@ -119,7 +119,7 @@
     <string name="drive_to_location">Drive to location</string>
     <string name="our_services">Our Services</string>
     <string name="reviews">Reviews</string>
-    <string name="note_ins">If your insurance is not on this list, contact our office at (866) 446-9056. Please contact your insurance carrier
+    <string name="note_ins" translatable="false">If your insurance is not on this list, contact our office at (866) 446-9056. Please contact your insurance carrier
         \nto learn the specifics of your coverage.</string>
     <string name="en_language_preference">Language Preferances</string>
     <string name="en_select_your_preferred_language">Choose your preference language</string>
@@ -152,7 +152,8 @@
     <string name="adjuster_info" translatable="false">Adjuster Information</string>
     <string name="note_insurance" translatable="false">Note: If you are a Return Patient coming back to us for a different issue/injury, please be sure to update your User Profile so that it reflects the current injury as well as the current coverage type.</string>
     <!-- SERVICES SCREEN -->
-    <string name="services_heading" translatable="false">PHYSICAL THERAPY AND \nSPORTS MEDICINE CENTER \nSTARTPTNOW.COM</string>
+    <string name="services_heading" translatable="false">PHYSICAL THERAPY AND \nSPORTS MEDICINE CENTER </string>
+    <string name="website" translatable="false">www.startptnow.com</string>
     <string name="services_list_header" translatable="false">BELOW IS A LIST OF SERVICES PROVIDING \nBY EACH LOCATION</string>
     <string name="bowie" translatable="false">BOWIE</string>
     <string name="greenbelt" translatable="false">GREENBELT</string>
@@ -161,31 +162,24 @@
     <string name="riverdale" translatable="false">RIVERDALE</string>
     <string name="glen_burnie" translatable="false">GLEN BURNIE</string>
     <string name="laurel" translatable="false">LAUREL</string>
-    <string name="doctor_bowie" translatable="false">Jennifer Gordon MSPT, CLT \nMaureen Maier, PT</string>
-    <string name="doctor_greenbelt" translatable="false">Terrence Gordon Cort, PT, DPT \nRaahatara M. Irfan, PT, DPT \nPallavi Agawane, MSPT</string>
-    <string name="doctor_olney" translatable="false">Sohaila Mosaddegh, PT, DPT \nBryan Bing, PT, DPT \nCalvin Poston, PTA</string>
-    <string name="doctor_silver_Spring" translatable="false">Sohaila Mosaddegh, PT, DPT</string>
-    <string name="doctor_riverdale" translatable="false">Shangyuan Wang, PT, DPT</string>
-    <string name="doctor_burnie" translatable="false">Ma Sarah Remaneses, PT, DPT</string>
-    <string name="doctor_laurel" translatable="false">Bryan Bing, PT, DPT</string>
-    <string name="text_bowie" translatable="false">▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
+    <string name="text_bowie" translatable="false">Jennifer Gordon MSPT, CLT \nMaureen Maier, PT\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
         \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy
         \n▪ Sports Medicine \n▪ Balance/Vestibular Program \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
-    <string name="text_greenbelt" translatable="false">▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
+    <string name="text_greenbelt" translatable="false">Terrence Gordon Cort, PT, DPT \nRaahatara M. Irfan, PT, DPT \nPallavi Agawane, MSPT \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
              \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy \n▪ Pediatric Physical Therapy (Dr. Raahat only)
             \n▪ Sports Medicine \n▪ Concussion Therapy \n▪ Dry Needling (Dr. Cort only) \n▪ Balance/Vestibular Program
             \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab \n▪ Functional Capacity Evaluation (FCE) (Dr. Cort only) \n▪ Work Hardening/Conditioning (Dr. Cort only)</string>
-    <string name="text_onley" translatable="false">▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_onley" translatable="false">Sohaila Mosaddegh, PT, DPT \nBryan Bing, PT, DPT \nCalvin Poston, PTA \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
             \n▪ Neurological Physical Therapy \n▪ Sports Medicine \n▪ Concussion Therapy \n▪ Dry Needling (Dr. Sohaila only) \n▪ Balance/Vestibular Program
         \n▪ Instrument Assisted Soft Tissue Mobs \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
-    <string name="text_silver_spring" translatable="false">▪Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_silver_spring" translatable="false">Sohaila Mosaddegh, PT, DPT \n▪Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
             \n▪ Neurological Physical Therapy \n▪Sports Medicine \n▪Concussion Therapy \n▪Dry Needling \n▪Balance/Vestibular Program \n▪Instrument Assisted Soft Tissue Mobs
         \n▪ PIP/Auto Injuries \n▪Workers’ Comp Rehab</string>
-    <string name="text_riverdale" translatable="false">▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_riverdale" translatable="false">Shangyuan Wang, PT, DPT\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
             \n▪ Neurological Physical Therapy \n▪ Sports Medicine \n▪ Instrument Assisted Soft Tissue Mobs \n▪ PIP/Auto Injuries Cases \n▪ Workers’ Comp Rehab</string>
-    <string name="text_glenburnie" translatable="false">▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy
+    <string name="text_glenburnie" translatable="false">Ma Sarah Remaneses, PT, DPT \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy
         \n▪ Sports Medicine \n▪ Balance/Vestibular Program \n▪ Instrument Assisted Soft Tissue Mobs \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
-    <string name="text_laurel" translatable="false">▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_laurel" translatable="false">Bryan Bing, PT, DPT \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
         \n▪ Neurological Physical Therapy \n▪ Sports Medicine \n▪ Balance/Vestibular Program \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
     <string name="services" translatable="false">Services</string>
     <string name="select_insurance" translatable="false">Please Select Your Insurance Type</string>

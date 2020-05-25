@@ -44,6 +44,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="@string/website"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="@string/services_list_header"
                     android:textSize="17sp"
                     android:layout_marginTop="10dp"
@@ -51,328 +59,368 @@
                     android:textStyle="bold"
                     />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="15dp"
                     android:id="@+id/bowie"
                     android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rel_1"
+                        android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/bowie"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="20dp"
                         android:textSize="21dp"
+                        android:textStyle="bold"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnBowie"
                         android:layout_width="20dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/down_arrow"
+                        android:layout_centerVertical="true"/>
+                    </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_bowie"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:id="@+id/txtBowie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="0"
+                        android:layout_marginTop="4dp"
+                        android:textSize="17sp"
+                        android:layout_below="@id/rel_1"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_bowie"/>
 
-                <TextView
-                    android:id="@+id/txtBowie"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textSize="17sp"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/text_bowie"/>
+                </RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/greenbelt"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_light"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_2"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/greenbelt"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="21sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnGreenbelt"
                         android:layout_width="20dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_greenbelt"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:id="@+id/txtGreenbelt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="0"
+                        android:layout_below="@id/rel_2"
+                        android:textSize="17sp"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_greenbelt"/>
 
-                <TextView
-                    android:id="@+id/txtGreenbelt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="@string/text_greenbelt"/>
+                </RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/onley"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_light"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_3"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/onley"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="21sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnOlney"
                         android:layout_width="20dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/down_arrow" />
+                </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textOnley"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="0"
+                        android:layout_below="@id/rel_3"
+                        android:layout_marginTop="4dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_onley"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_olney"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/txtolney"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="@string/text_onley"/>
-
-                <LinearLayout
-                    android:id="@+id/silver_spring"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_light"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_4"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/silver_spring"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnSilver"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/down_arrow" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_silver_Spring"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/txtsilver"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="@string/text_silver_spring"/>
+                    <TextView
+                        android:id="@+id/textSilver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="0"
+                        android:layout_below="@id/rel_4"
+                        android:layout_marginTop="4dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_silver_spring"/>
 
-                <LinearLayout
-                    android:id="@+id/riverdale"
-                    android:layout_width="wrap_content"
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_light"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_5"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/riverdale"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="21sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnRiverdale"
                         android:layout_width="20dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/down_arrow" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_riverdale"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textRiverDale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@id/rel_5"
+                        android:maxLines="0"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_riverdale"/>
 
-                <TextView
-                    android:id="@+id/txtriverDale"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="@string/text_riverdale"/>
+                </RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/glen_burnie"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_light"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_6"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/glen_burnie"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="21sp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnGlen"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/down_arrow" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_burnie"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textGlen"
+                        android:layout_below="@id/rel_6"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="0"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_glenburnie"/>
 
-                <TextView
-                    android:id="@+id/txtburnie"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="@string/text_glenburnie"/>
+                </RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/laurel"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_light"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_7"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\u25CF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
                         android:textColor="@color/colorBlack"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/laurel"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="21sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
                         android:textColor="@color/colorBlack"/>
 
-                    <ImageButton
-                        android:layout_gravity="center_vertical"
+                    <ImageView
+                        android:id="@+id/btnLaurel"
                         android:layout_width="20dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/down_arro"/>
-                </LinearLayout>
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/down_arrow" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="@string/doctor_laurel"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/colorBlack"/>
+                </RelativeLayout>
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@id/rel_7"
+                        android:id="@+id/textLaurel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="0"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginLeft="24dp"
+                        android:text="@string/text_laurel"/>
 
-                <TextView
-                    android:id="@+id/textlaurel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="0"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="15dp"
-                    android:text="@string/text_laurel"/>
-
+                </RelativeLayout>
 
             </LinearLayout>
         </ScrollView>

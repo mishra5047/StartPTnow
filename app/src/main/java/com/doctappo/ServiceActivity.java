@@ -3,6 +3,8 @@ package com.doctappo;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -10,7 +12,7 @@ import util.CommonClass;
 
 public class ServiceActivity extends CommonActivity {
 
-    LinearLayout lay_1, lay_2, lay_3, lay_4, lay_5, lay_6, lay_7;
+ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,81 +21,102 @@ public class ServiceActivity extends CommonActivity {
         setContentView(R.layout.activity_service);
         setHeaderTitle(getString(R.string.services));
 
-
-        lay_1 = findViewById(R.id.bowie);
-        lay_1.setOnClickListener(new View.OnClickListener() {
+        btn_1 = findViewById(R.id.btnBowie);
+        btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.txtBowie);
-                if (txt.getMaxLines() == Integer.MAX_VALUE)
+                if (txt.getMaxLines() == Integer.MAX_VALUE){
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                }
+                else {
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_1.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
-        lay_2 = findViewById(R.id.greenbelt);
-        lay_2.setOnClickListener(new View.OnClickListener() {
+        btn_2 = findViewById(R.id.btnGreenbelt);
+        btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.txtGreenbelt);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                else{
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_2.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
-        lay_3 = findViewById(R.id.onley);
-        lay_3.setOnClickListener(new View.OnClickListener() {
+        btn_3 = findViewById(R.id.btnOlney);
+        btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txt = findViewById(R.id.txtolney);
+                TextView txt = findViewById(R.id.textOnley);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                else {
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_3.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
-        lay_4 = findViewById(R.id.silver_spring);
-        lay_4.setOnClickListener(new View.OnClickListener() {
+        btn_4 = findViewById(R.id.btnSilver);
+        btn_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txt = findViewById(R.id.txtsilver);
+                TextView txt = findViewById(R.id.textSilver);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                else {
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_4.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
-        lay_5 = findViewById(R.id.riverdale);
-        lay_5.setOnClickListener(new View.OnClickListener() {
+        btn_5 = findViewById(R.id.btnRiverdale);
+        btn_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txt = findViewById(R.id.txtriverDale);
+                TextView txt = findViewById(R.id.textRiverDale);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                else {
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_5.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
-        lay_6 = findViewById(R.id.glen_burnie);
-        lay_6.setOnClickListener(new View.OnClickListener() {
+        btn_6 = findViewById(R.id.btnGlen);
+        btn_6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txt = findViewById(R.id.txtburnie);
+                TextView txt = findViewById(R.id.textGlen);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                else {
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_6.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
-        lay_7 = findViewById(R.id.laurel);
-        lay_7.setOnClickListener(new View.OnClickListener() {
+        btn_7 = findViewById(R.id.btnLaurel);
+        btn_7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txt = findViewById(R.id.textlaurel);
+                TextView txt = findViewById(R.id.textLaurel);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
                     txt.setMaxLines(0);
-                else txt.setMaxLines(Integer.MAX_VALUE);
+                else {
+                    txt.setMaxLines(Integer.MAX_VALUE);
+                    btn_7.setImageResource(R.drawable.up_arrow);
+                }
             }
         });
 
