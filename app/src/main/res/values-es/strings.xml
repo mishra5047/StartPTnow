@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">StartPTnow</string>
+
+    <string name="process_with_Data">Procesando con datos ..</string>
+    <string name="hint_search">Buscar palabras clave</string>
+    <string name="title_activity_details">Detalles de actividad</string>
+    <string name="thankyou">Gracias por la cita</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="error_can_not_connect_to_server">No es posible conectar con el servidor</string>
+    <string name="error_no_internet">Sin conexión a Internet</string>
+    <string name="already_booked">Ranura de tiempo ya reservada</string>
+    <string name="tab_morning">Mañana</string>
+    <string name="tab_afternoon">Tarde</string>
+    <string name="tab_evening">Noche</string>
+    <string name="patient_contact">Contacto con el paciente</string>
+    <string name="appointment_time">Hora de la cita</string>
+    <string name="contact_info">Información del contacto</string>
+    <string name="payment_process">Proceso de pago</string>
+    <string name="nav_update_profile">Actualización del perfil</string>
+    <string name="nav_change_password">Cambia la contraseña</string>
+    <string name="valid_required_dob">Fecha de nacimiento requerida</string>
+    <string name="nav_my_appointment">Mi cita</string>
+    <string name="nav_logout">Cerrar sesión</string>
+    <string name="nav_share">Compartir</string>
+    <string name="nav_rating">Valorarnos</string>
+    <string name="nav_login">Iniciar sesión</string>
+    <string name="item_title">Comunicar</string>
+    <string name="item_user">Administrar usuario</string>
+    <string name="tab_list">Lista</string>
+    <string name="tab_map">Mapa</string>
+    <string name="countinue_home">Continuar a casa</string>
+    <string name="track_my_order">Seguir mi orden</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="tab_service">Servicios</string>
+    <string name="tab_details">Detalles</string>
+    <string name="tab_reviews">Comentarios</string>
+    <string name="tab_photo">Fotos</string>
+    <string name="tab_doctors">Doctores</string>
+
+    <!-- LOGIN SCREEM -->
+    <string name="create_account">Crea una cuenta</string>
+    <string name="createaccount_yourfirstname">Tu nombre completo</string>
+    <string name="createaccount_yourphone">Su teléfono</string>
+    <string name="createaccount_emailaddress">Dirección de correo electrónico</string>
+    <string name="createaccount_createpassword">Crear contraseña</string>
+    <string name="createaccount_termsandprivacypolicy">Al iniciar sesión o iniciar sesión, acepta</string>
+    <string name="createaccount_our">nuestro</string>
+    <string name="createaccount_terms">Condiciones</string>
+    <string name="createaccount_and">y</string>
+    <string name="createaccount_privacypolicy">Política de privacidad</string>
+    <string name="createaccount_next">Próximo</string>
+    <string name="login_now">Inicia sesión ahora</string>
+    <string name="sign_in">Registrarse</string>
+    <string name="signin_emailaddress">Dirección de correo electrónico</string>
+    <string name="signin_password">Contraseña</string>
+    <string name="signin_forgotmypassword">Forgot my password</string>
+    <string name="register_new">Olvidé mi contraseña</string>
+    <string name="required">Necesario</string>
+    <string name="cancle">Cancle</string>
+    <string name="your_ratings">Tu clasificación</string>
+    <string name="your_comment">Tu comentario</string>
+    <string name="your_comment_hint">Tu comentario aqui</string>
+    <!-- END LOGIN SCREEN -->
+    <string name="address">Habla a :</string>
+    <string name="phone">Teléfono :</string>
+    <string name="contact_us">Contáctenos</string>
+    <string name="add_review">Agregar una opinión</string>
+    <string name="send">Enviar</string>
+    <string name="valid_required_email">Correo electronico (requerido</string>
+    <string name="valid_email">Ingrese un correo electrónico válido</string>
+    <string name="valid_required_password">Se requiere contraseña</string>
+    <string name="valid_required_fullname">Nombre completo requerido</string>
+    <string name="valid_required_phone">Teléfono requerido</string>
+    <string name="valid_required_current_password">Contraseña actual requerida</string>
+    <string name="valid_required_new_password">Nueva contraseña requerida</string>
+    <string name="valid_not_match">Volver a ingresar la contraseña no coincide</string>
+    <string name="update_profile">Actualización del perfil</string>
+    <string name="change_password">Cambia la contraseña</string>
+    <string name="my_appointments">Mi cita</string>
+    <string name="update">Actualizar</string>
+    <string name="profile_update_success">Perfil actualizado con éxito</string>
+
+    <string name="new_password">Nueva contraseña</string>
+    <string name="cur_password">contraseña actual</string>
+    <string name="re_password">Escriba la contraseña otra vez</string>
+    <string name="cancel_confirmation">¿Estás seguro de cancelar la cita?</string>
+    <string name="fire">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm_n_book">Confirmar y reservar cita</string>
+    <string name="navigation_drawer_open">Abierto</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="cover_area">Área de cobertura : </string>
+    <string name="search">Buscar</string>
+    <string name="allow_nearby">Cerca de</string>
+
+    <string name="choose_country">Elige país</string>
+    <string name="choose_city">Elige ciudad</string>
+    <string name="choose_locality">Elige localidad</string>
+    <string name="choose_doctor">Elige doctor</string>
+    <string name="choose_date">Elegir fecha</string>
+
+    <string name="appoitnment_confirm_message_part1">Su cita se ha reservado correctamente, ID de cita : </string>
+    <string name="appointment_confirm_message_part2">visite mi cita para más detalles</string>
+    <string name="email">Email :</string>
+
+    <string name="paid">pagar</string>
+    <string name="unpaid">Sin pagar</string>
+    <string name="KM">KM</string>
+    <string name="hr">hora.</string>
+    <string name="min">min.</string>
+    <string name="service_charges">Cargo por servicio :</string>
+    <string name="approx_time">Tiempo aproximado : </string>
+    <string name="amount">Cantidad : </string>
+    <string name="BOOK">LIBRO</string>
+    <string name="not_timetable_set">No es un horario establecido para la clínica</string>
+    <string name="best_Services"> </string>
+    <string name="drive_to_location">Conducir a la ubicación</string>
+    <string name="our_services">Nuestros servicios</string>
+    <string name="reviews">Comentarios</string>
+
+    <string name="en_language_preference">Preferencias de idioma</string>
+    <string name="en_select_your_preferred_language">Elige tu idioma de preferencia</string>
+    <string name="english">English</string>
+    <string name="appointment_note">Nota de cita:</string>
+    <string name="valid_required_insurance_type">Tipo de seguro requerido</string>
+    <string name="valid_required_insurance_provider">Proveedor de seguro requerido</string>
+    <string name="spanish">Español</string>
+    <string name="by_signing_or_in_you_accept_nour_terms_and_privacy_policy">Al iniciar sesión o iniciar sesión, acepta\nnuestro <b>Condiciones</b> y <b>Política de privacidad</b></string>
+    <string name="note">Nota</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+    <string name="note2">Nota:</string>
+    <string name="resend">Reenviar</string>
+    <string name="back_to_login">Atrás para iniciar sesión</string>
+    <string name="your_registered_email">Su correo electrónico registrado</string>
+    <string name="is_still_not_verified_please_click_on_verification_link_sent_to_your_email_you_may_check_in_inbox_or_spam_folder">aún no está verificado, haga clic en el enlace de verificación enviado a su correo electrónico. Puede verificar en la bandeja de entrada o carpeta de spam.</string>
+    <string name="patient_application"><![CDATA[<font color=\'#3dcdad\'>Solicitud de paciente</font>]]></string>
+    <string name="photo_id">identificación fotográfica</string>
+    <string name="prescription_doctor_referral">Prescripción / referencia médica</string>
+    <string name="insurance_card_if_applicable">Tarjeta de seguro (si corresponde)</string>
+    <string name="a_a_form_auto_accidents"><![CDATA[<font color=\'#3dcdad\'>Formulario A y A (accidentes automovilísticos)</font>]]></string>
+    <string name="pip_application_if_applicable"><![CDATA[<font color=\'#3dcdad\'>Solicitud PIP (si corresponde)</font>]]></string>
+    <string name="note_you_must_be_contacted_and_all_information_must_be_verified_before_any_appointment_are_confirmed_by_ptsmc_staff">Nota: Debe contactarse con usted y toda la información debe ser verificada antes de que cualquier cita sea confirmada por el personal de PTSMC.</string>
+
+</resources>

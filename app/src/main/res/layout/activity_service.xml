@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctappo.ServiceActivity"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/services_heading"
+                    android:textAlignment="viewStart"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services_list_header"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/bowie"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bowie"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21dp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_bowie"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txtBowie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/text_bowie"/>
+
+                <LinearLayout
+                    android:id="@+id/greenbelt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/greenbelt"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_greenbelt"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txtGreenbelt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:text="@string/text_greenbelt"/>
+
+                <LinearLayout
+                    android:id="@+id/onley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/onley"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_olney"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txtolney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:text="@string/text_onley"/>
+
+                <LinearLayout
+                    android:id="@+id/silver_spring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/silver_spring"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_silver_Spring"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txtsilver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:text="@string/text_silver_spring"/>
+
+                <LinearLayout
+                    android:id="@+id/riverdale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/riverdale"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_riverdale"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txtriverDale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:text="@string/text_riverdale"/>
+
+                <LinearLayout
+                    android:id="@+id/glen_burnie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/glen_burnie"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_burnie"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txtburnie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:text="@string/text_glenburnie"/>
+
+                <LinearLayout
+                    android:id="@+id/laurel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u25CF"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laurel"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="21sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/down_arro"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/doctor_laurel"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/textlaurel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="0"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:text="@string/text_laurel"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

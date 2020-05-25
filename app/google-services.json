@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332090255666",
+    "firebase_url": "https://startptnow-9d10c.firebaseio.com",
+    "project_id": "startptnow-9d10c",
+    "storage_bucket": "startptnow-9d10c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332090255666:android:5b5e8313506adcbbc44f2b",
+        "android_client_info": {
+          "package_name": "com.startptnow.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332090255666-snrj3iga9gnv7gac98k1p4veni60hc3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCN1tDzg5loCsCJqmZaEl2huRlQWgDtNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332090255666-snrj3iga9gnv7gac98k1p4veni60hc3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
