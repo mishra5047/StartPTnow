@@ -27,6 +27,7 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.txtBowie);
                 if (txt.getMaxLines() == Integer.MAX_VALUE){
+                    btn_1.setImageResource(R.drawable.down_arrow);
                     txt.setMaxLines(0);
                 }
                 else {
@@ -42,7 +43,10 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.txtGreenbelt);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
+                {
                     txt.setMaxLines(0);
+                    btn_2.setImageResource(R.drawable.down_arrow);
+                }
                 else{
                     txt.setMaxLines(Integer.MAX_VALUE);
                     btn_2.setImageResource(R.drawable.up_arrow);
@@ -56,7 +60,10 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.textOnley);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
+                {
                     txt.setMaxLines(0);
+                    btn_3.setImageResource(R.drawable.down_arrow);
+                }
                 else {
                     txt.setMaxLines(Integer.MAX_VALUE);
                     btn_3.setImageResource(R.drawable.up_arrow);
@@ -70,7 +77,10 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.textSilver);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
+                {
                     txt.setMaxLines(0);
+                    btn_4.setImageResource(R.drawable.down_arrow);
+                }
                 else {
                     txt.setMaxLines(Integer.MAX_VALUE);
                     btn_4.setImageResource(R.drawable.up_arrow);
@@ -84,7 +94,10 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.textRiverDale);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
+                {
                     txt.setMaxLines(0);
+                    btn_5.setImageResource(R.drawable.down_arrow);
+                }
                 else {
                     txt.setMaxLines(Integer.MAX_VALUE);
                     btn_5.setImageResource(R.drawable.up_arrow);
@@ -98,7 +111,10 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.textGlen);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
+                {
                     txt.setMaxLines(0);
+                    btn_6.setImageResource(R.drawable.down_arrow);
+                }
                 else {
                     txt.setMaxLines(Integer.MAX_VALUE);
                     btn_6.setImageResource(R.drawable.up_arrow);
@@ -112,13 +128,15 @@ ImageView btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6 , btn_7;
             public void onClick(View v) {
                 TextView txt = findViewById(R.id.textLaurel);
                 if (txt.getMaxLines() == Integer.MAX_VALUE)
+                {
                     txt.setMaxLines(0);
+                    btn_7.setImageResource(R.drawable.down_arrow);
+                }
                 else {
                     txt.setMaxLines(Integer.MAX_VALUE);
                     btn_7.setImageResource(R.drawable.up_arrow);
                 }
             }
         });
-
     }
 }

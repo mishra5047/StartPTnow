@@ -64,7 +64,9 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
                     android:id="@+id/bowie"
+                    android:layout_marginRight="15dp"
                     android:orientation="horizontal">
 
                     <RelativeLayout
@@ -90,9 +92,9 @@
 
                     <ImageView
                         android:id="@+id/btnBowie"
-                        android:layout_width="20dp"
+                        android:layout_width="25dp"
                         android:layout_alignParentEnd="true"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/down_arrow"
                         android:layout_centerVertical="true"/>
@@ -117,6 +119,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
                     android:orientation="horizontal">
 
                 <RelativeLayout
@@ -142,9 +146,9 @@
 
                     <ImageView
                         android:id="@+id/btnGreenbelt"
-                        android:layout_width="20dp"
+                        android:layout_width="25dp"
                         android:layout_alignParentEnd="true"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:layout_marginRight="10dp"
                         android:layout_centerVertical="true"
                         android:src="@drawable/down_arrow" />
@@ -169,6 +173,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
                     android:orientation="horizontal">
 
                 <RelativeLayout
@@ -194,9 +200,9 @@
 
                     <ImageView
                         android:id="@+id/btnOlney"
-                        android:layout_width="20dp"
+                        android:layout_width="25dp"
                         android:layout_alignParentEnd="true"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:layout_marginRight="10dp"
                         android:layout_centerVertical="true"
                         android:src="@drawable/down_arrow" />
@@ -220,6 +226,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
                     android:orientation="horizontal">
 
                 <RelativeLayout
@@ -245,8 +253,8 @@
 
                     <ImageView
                         android:id="@+id/btnSilver"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -273,6 +281,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
                     android:orientation="horizontal">
 
                 <RelativeLayout
@@ -298,9 +308,9 @@
 
                     <ImageView
                         android:id="@+id/btnRiverdale"
-                        android:layout_width="20dp"
+                        android:layout_width="25dp"
                         android:layout_alignParentEnd="true"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:layout_marginRight="10dp"
                         android:layout_centerVertical="true"
                         android:src="@drawable/down_arrow" />
@@ -325,6 +335,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
                     android:orientation="horizontal">
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -349,8 +361,8 @@
 
                     <ImageView
                         android:id="@+id/btnGlen"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:layout_alignParentEnd="true"
                         android:layout_marginRight="10dp"
                         android:layout_centerVertical="true"
@@ -376,6 +388,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_border_light"
                     android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
                     android:orientation="horizontal">
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -400,9 +414,9 @@
 
                     <ImageView
                         android:id="@+id/btnLaurel"
-                        android:layout_width="20dp"
+                        android:layout_width="25dp"
                         android:layout_alignParentEnd="true"
-                        android:layout_height="20dp"
+                        android:layout_height="25dp"
                         android:layout_marginRight="10dp"
                         android:layout_centerVertical="true"
                         android:src="@drawable/down_arrow" />

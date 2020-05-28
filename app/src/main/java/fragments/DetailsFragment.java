@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.doctappo.MapActivity;
@@ -29,6 +30,7 @@ public class DetailsFragment extends Fragment {
     private Activity act;
     private Bundle args;
     private BusinessModel selected_business;
+    ImageView call;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,20 +41,24 @@ public class DetailsFragment extends Fragment {
         selected_business = ActiveModels.BUSINESS_MODEL;
 
         TextView txtPhone = (TextView) rootView.findViewById(R.id.textPhone);
-        txtPhone.setOnClickListener(new View.OnClickListener() {
+        String number = selected_business.getBus_contact();
+
+        call = rootView.findViewById(R.id.callBtn);
+        call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + txtPhone.getText())) ;
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
                 startActivity(intent);
             }
         });
-
         TextView textDescription = (TextView) rootView.findViewById(R.id.textDescription);
         textDescription.setText(Html.fromHtml(selected_business.getBus_description()));
 
         TextView txtAddress = (TextView) rootView.findViewById(R.id.textAddress);
 
-        txtPhone.setText(selected_business.getBus_contact());
+        // format of new number
+        String no = number.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
+        txtPhone.setText(no);
         txtAddress.setText(selected_business.getBus_google_street());
 
         args = this.getArguments();

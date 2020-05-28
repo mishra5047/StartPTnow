@@ -171,10 +171,7 @@ public class PersonInfoActivity extends CommonActivity {
                                         e.printStackTrace();
                                     }
 
-
-                                    Intent intent = null;
-
-                                    intent = new Intent(PersonInfoActivity.this, ThanksActivity.class);
+                                    Intent intent = new Intent(PersonInfoActivity.this, ThanksActivity.class);
                                     intent.putExtra("date", choose_date);
                                     intent.putExtra("timeslot", ActiveModels.SELECTED_SLOT.getSlot());
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

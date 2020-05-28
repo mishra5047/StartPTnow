@@ -20,9 +20,16 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 import Config.ApiParams;
 import Config.ConstValue;
@@ -31,30 +38,40 @@ import configfcm.MyFirebaseRegister;
 import dialogues.LanguagePrfsDialog;
 import models.CategoryModel;
 import util.CommonClass;
+import util.VJsonRequest;
 
 public class MainActivity extends CommonActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private ArrayList<CategoryModel> categoryArray;
     private RecyclerView categoryRecyclerView;
     private CategoryAdapter categoryAdapter;
-    private ProgressBar progressBar1;
     private Toolbar toolbar;
     private Button btnLanguage;
     private LanguagePrfsDialog languagePrfsDialog;
 
-    ImageView imageInstagram, imageFacebook, imageTwitter;
+    RelativeLayout services, patLogin;
+    ImageView imageInstagram, imageTwitter, imageFacebook;
     TextView website, register;
-    RelativeLayout services, patLogin, appointment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ScreenSize size_check = new ScreenSize();
+        String size = size_check.screenCheck(MainActivity.this);
+
+        if (size.equalsIgnoreCase("large"))
+        {
+            setContentView(R.layout.activity_main);
+        }
+        else
+        {
+            setContentView(R.layout.activity_main_small);
+        }
+
         CommonClass.initRTL(this, CommonClass.getLanguage(this));
-        setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         setHeaderTitle(getString(R.string.app_name));
 
@@ -68,6 +85,9 @@ public class MainActivity extends CommonActivity implements NavigationView.OnNav
 
         TextView textView1 = (TextView) findViewById(R.id.textView);
         textView1.setTypeface(getCustomFont());
+        bindView();
+        loadData();
+
 
         register =  findViewById(R.id.registerTxt);
         register.setOnClickListener(new View.OnClickListener() {
@@ -96,14 +116,6 @@ public class MainActivity extends CommonActivity implements NavigationView.OnNav
             }
         });
 
-        appointment = findViewById(R.id.makeAppointment);
-        appointment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ThanksActivity.class);
-                startActivity(intent);
-            }
-        });
         imageInstagram = findViewById(R.id.instagram);
         imageInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,25 +162,16 @@ public class MainActivity extends CommonActivity implements NavigationView.OnNav
         });
     }
 
+
     // get xml element from xml file
     public void bindView() {
-        categoryRecyclerView = (RecyclerView) findViewById(R.id.rv_artist);
+        categoryRecyclerView = findViewById(R.id.rv_artist);
         GridLayoutManager layoutManager
-                = new GridLayoutManager(this, 3);
+                = new GridLayoutManager(this, 1);
         categoryRecyclerView.setLayoutManager(layoutManager);
 
         categoryAdapter = new CategoryAdapter(this, categoryArray);
         categoryRecyclerView.setAdapter(categoryAdapter);
-        progressBar1 = (ProgressBar) findViewById(R.id.progressBar1);
-        setProgressBarAnimation(progressBar1);
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-
-
     }
 
     // show language dialog
@@ -217,6 +220,29 @@ public class MainActivity extends CommonActivity implements NavigationView.OnNav
     }
 
     // load category in gridview
+    public void loadData() {
+        // this class for handle request response thread and return response data
+        VJsonRequest vJsonRequest = new VJsonRequest(MainActivity.this, ApiParams.CATEGORY_LIST,
+                new VJsonRequest.VJsonResponce() {
+                    @Override
+                    public void VResponce(String responce) {
+
+                        Gson gson = new Gson();
+                        Type listType = new TypeToken<List<CategoryModel>>() {
+                        }.getType();
+                        categoryArray.clear();
+                        categoryArray.addAll((Collection<? extends CategoryModel>) gson.fromJson(responce, listType));
+                        categoryAdapter.notifyDataSetChanged();
+
+                    }
+
+                    @Override
+                    public void VError(String responce) {
+
+                    }
+                });
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

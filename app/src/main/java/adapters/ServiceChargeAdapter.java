@@ -48,10 +48,6 @@ public class ServiceChargeAdapter extends RecyclerView.Adapter<ServiceChargeAdap
             Double getAmt = Double.parseDouble(categoryModel.getService_price());
             Double detDisc = Double.parseDouble(categoryModel.getService_discount());
             Double finalAmt = getAmt - (detDisc * getAmt / 100);
-            holder.txtPrice.setText(String.format("%.2f", finalAmt));
-        } else {
-            holder.txtPriceAct.setText("");
-            holder.txtPrice.setText(String.format("%.2f", Double.parseDouble(categoryModel.getService_price())));
         }
         holder.chbox.setText(stitle);
         holder.chbox.setOnClickListener(new OnClickListener() {

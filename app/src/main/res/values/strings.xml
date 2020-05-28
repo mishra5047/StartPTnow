@@ -1,6 +1,5 @@
 <resources>
 
-
     <string name="app_name">StartPTnow</string>
     <string name="process_with_Data">Processing with data..</string>
     <string name="hint_search">Search Keywords</string>
@@ -30,8 +29,8 @@
     <string name="tab_map">Map</string>
     <string name="countinue_home">Continue Home</string>
     <string name="track_my_order">Track my order</string>
-    <string name="date">Date</string>
-    <string name="time">Time</string>
+    <string name="date"><b>Date</b></string>
+    <string name="time"><b>Time</b></string>
     <string name="tab_service">Services</string>
     <string name="tab_details">Details</string>
     <string name="tab_reviews">Reviews</string>
@@ -142,13 +141,15 @@
     <string name="insurance_card_if_applicable">Insurance Card (If applicable)</string>
     <string name="a_a_form_auto_accidents"><![CDATA[<font color=\'#3dcdad\'>A & A Form (Auto Accidents)</font>]]></string>
     <string name="pip_application_if_applicable"><![CDATA[<font color=\'#3dcdad\'>PIP Application (If applicable)</font>]]></string>
-    <string name="note_you_must_be_contacted_and_all_information_must_be_verified_before_any_appointment_are_confirmed_by_ptsmc_staff">Note: You must be contacted and all information must be verified before any appointment are confirmed by PTSMC staff.</string>
+    <string name="note_you_must_be_contacted_and_all_information_must_be_verified_before_any_appointment_are_confirmed_by_ptsmc_staff">You will be contacted by our staff to verify
+    all information prior to your appointment date/time.</string>
     <string name="ptsmc" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PTSMC Patient Application</font>]]></string>
-    <string name="ptsmc_pip" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PTSMC PIP Patient Application</font>]]></string>
+    <string name="ptsmc_pip" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PIP / LITIGATION PATIENT INFORMATION</font>]]></string>
+    <string name="cash_pay" translatable="false"><![CDATA[<font color=\'#3dcdad\'>SELF PAY-PATIENT INFORMATION</font>]]></string>
     <string name="prescription" translatable="false">Prescription / Referral from doctor (if your insurance requires)</string>
     <string name="current_medications" translatable="false">Current Medications</string>
     <string name="attorney_info" translatable="false"><![CDATA[<font color=\'#3dcdad\'>If Applicable, Attorney Information and A&A Form to be singed</font>]]></string>
-    <string name="ptsmc_wc_apply" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PTSMC WC Application</font>]]></string>
+    <string name="ptsmc_wc_apply" translatable="false"><![CDATA[<font color=\'#3dcdad\'>WORKER’S COMPENSATION PATIENT INFORMATION</font>]]></string>
     <string name="adjuster_info" translatable="false">Adjuster Information</string>
     <string name="note_insurance" translatable="false">Note: If you are a Return Patient coming back to us for a different issue/injury, please be sure to update your User Profile so that it reflects the current injury as well as the current coverage type.</string>
     <!-- SERVICES SCREEN -->
@@ -162,25 +163,34 @@
     <string name="riverdale" translatable="false">RIVERDALE</string>
     <string name="glen_burnie" translatable="false">GLEN BURNIE</string>
     <string name="laurel" translatable="false">LAUREL</string>
-    <string name="text_bowie" translatable="false">Jennifer Gordon MSPT, CLT \nMaureen Maier, PT\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
+    <string name="text_bowie" translatable="false"><b><big>Jennifer Gordon MSPT, CLT \nMaureen Maier, PT</big></b>\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
         \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy
         \n▪ Sports Medicine \n▪ Balance/Vestibular Program \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
-    <string name="text_greenbelt" translatable="false">Terrence Gordon Cort, PT, DPT \nRaahatara M. Irfan, PT, DPT \nPallavi Agawane, MSPT \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
+    <string name="text_greenbelt" translatable="false"><b><big>Terrence Gordon Cort, PT, DPT \nRaahatara M. Irfan, PT, DPT \nPallavi Agawane, MSPT </big></b>\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy
              \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy \n▪ Pediatric Physical Therapy (Dr. Raahat only)
             \n▪ Sports Medicine \n▪ Concussion Therapy \n▪ Dry Needling (Dr. Cort only) \n▪ Balance/Vestibular Program
             \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab \n▪ Functional Capacity Evaluation (FCE) (Dr. Cort only) \n▪ Work Hardening/Conditioning (Dr. Cort only)</string>
-    <string name="text_onley" translatable="false">Sohaila Mosaddegh, PT, DPT \nBryan Bing, PT, DPT \nCalvin Poston, PTA \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_onley" translatable="false"><b><big>Sohaila Mosaddegh, PT, DPT \nBryan Bing, PT, DPT \nCalvin Poston, PTA </big></b>\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
             \n▪ Neurological Physical Therapy \n▪ Sports Medicine \n▪ Concussion Therapy \n▪ Dry Needling (Dr. Sohaila only) \n▪ Balance/Vestibular Program
         \n▪ Instrument Assisted Soft Tissue Mobs \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
-    <string name="text_silver_spring" translatable="false">Sohaila Mosaddegh, PT, DPT \n▪Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_silver_spring" translatable="false"><b><big>Sohaila Mosaddegh, PT, DPT </big></b>\n▪Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
             \n▪ Neurological Physical Therapy \n▪Sports Medicine \n▪Concussion Therapy \n▪Dry Needling \n▪Balance/Vestibular Program \n▪Instrument Assisted Soft Tissue Mobs
         \n▪ PIP/Auto Injuries \n▪Workers’ Comp Rehab</string>
-    <string name="text_riverdale" translatable="false">Shangyuan Wang, PT, DPT\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_riverdale" translatable="false"><b><big>Shangyuan Wang, PT, DPT</big></b>\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
             \n▪ Neurological Physical Therapy \n▪ Sports Medicine \n▪ Instrument Assisted Soft Tissue Mobs \n▪ PIP/Auto Injuries Cases \n▪ Workers’ Comp Rehab</string>
-    <string name="text_glenburnie" translatable="false">Ma Sarah Remaneses, PT, DPT \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy
+    <string name="text_glenburnie" translatable="false"><b><big>Ma Sarah Remaneses, PT, DPT </big></b>\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy \n▪ Neurological Physical Therapy
         \n▪ Sports Medicine \n▪ Balance/Vestibular Program \n▪ Instrument Assisted Soft Tissue Mobs \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
-    <string name="text_laurel" translatable="false">Bryan Bing, PT, DPT \n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
+    <string name="text_laurel" translatable="false"><b><big>Bryan Bing, PT, DPT </big></b>\n▪ Physical Therapy \n▪ Orthopedic Physical Therapy \n▪ Geriatric Physical Therapy \n▪ Cardiovascular Physical Therapy
         \n▪ Neurological Physical Therapy \n▪ Sports Medicine \n▪ Balance/Vestibular Program \n▪ PIP/Auto Injuries \n▪ Workers’ Comp Rehab</string>
     <string name="services" translatable="false">Services</string>
     <string name="select_insurance" translatable="false">Please Select Your Insurance Type</string>
+
+
+    <string name="spinner_0" translatable="false"><b>Choose Your Insurance Type</b></string>
+    <string name="spinner_1" translatable="false"><b>Commercial Insurance</b></string>
+    <string name="spinner_2" translatable="false"><b>Personal Injury(PIP)/ Auto Injury</b></string>
+    <string name="spinner_3" translatable="false"><b>Workers Compensation /FCE/Work Hardening</b></string>
+    <string name="spinner_4" translatable="false"><b>Cash Pay / No Insurance</b></string>
+    <string name="needed_appo" translatable="false"><b>Items Needed For Your First Appointment</b></string>
+
 </resources>

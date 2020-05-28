@@ -120,8 +120,6 @@ public class TimeSlotActivity extends CommonActivity {
         //new getTimeSlotTask().execute();
 
         TextView txtTotalTime = (TextView) findViewById(R.id.totalTime);
-        TextView txtTotalAmount = (TextView) findViewById(R.id.totalAmount);
-        txtTotalAmount.setText(ConstValue.CURRENCY + (common.get_service_total_amount() + Double.valueOf(selected_business.getBus_fee())));
         txtTotalTime.setText(common.get_service_total_times_string());
 
     }

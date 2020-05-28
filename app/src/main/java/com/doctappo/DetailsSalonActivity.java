@@ -37,7 +37,6 @@ import util.CommonClass;
 public class DetailsSalonActivity extends CommonActivity {
 
     private BusinessModel selected_business;
-    private TextView txtTotalTime, txtTotalAmount, txtServiceCharges;
     private TabLayout tabLayout;
 
     @Override
@@ -80,9 +79,6 @@ public class DetailsSalonActivity extends CommonActivity {
         NestedScrollView scrollView = (NestedScrollView) findViewById(R.id.nsv);
         scrollView.setFillViewport(true);
 
-        txtTotalTime = (TextView) findViewById(R.id.totalTime);
-        txtTotalAmount = (TextView) findViewById(R.id.totalAmount);
-        txtServiceCharges = (TextView) findViewById(R.id.servicecharge);
 
         LinearLayout linearContinue = (LinearLayout) findViewById(R.id.linearContinue);
         linearContinue.setOnClickListener(new View.OnClickListener() {
@@ -135,11 +131,8 @@ public class DetailsSalonActivity extends CommonActivity {
             Picasso.with(this).load(ConstValue.BASE_URL + "/uploads/business/" + selected_business.getBus_logo()).into(bannerImage);
             textName.setText(selected_business.getBus_title());
             ratingbar.setRating(Float.parseFloat(selected_business.getAvg_rating()));
-            txtServiceCharges.setText(selected_business.getBus_fee());
             String[] timesplit = selected_business.getBus_con_time().split(":");
-            txtTotalTime.setText(timesplit[0] + getString(R.string.hr) + timesplit[1] + getString(R.string.min));
-            txtTotalAmount.setText(selected_business.getBus_fee());
-        }
+           }
     }
 
     // setup icons in tab
@@ -153,8 +146,6 @@ public class DetailsSalonActivity extends CommonActivity {
 
     // update price with selected services
     public void updatePrice(Double totalAmount, String[] timesplit) {
-        txtTotalAmount.setText(String.format("%.2f", totalAmount));
-        txtTotalTime.setText(timesplit[0] + getString(R.string.hr) + timesplit[1] + getString(R.string.min));
     }
 
     // bind fragment in view pager

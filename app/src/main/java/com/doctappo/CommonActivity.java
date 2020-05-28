@@ -44,7 +44,6 @@ public abstract class CommonActivity extends AppCompatActivity {
 
     // set back arrow on actionbar and back event
     public void allowBack() {
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
     }

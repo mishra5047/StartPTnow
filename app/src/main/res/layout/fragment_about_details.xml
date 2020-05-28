@@ -26,12 +26,13 @@
             android:text=""
             android:textAlignment="viewStart" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/text_margin"
@@ -40,18 +41,29 @@
 
             <TextView
                 android:id="@+id/textPhone"
+                android:layout_toRightOf="@id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/text_margin"
                 android:text=""
                 android:textAlignment="viewStart" />
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/callBtn"
+                android:layout_width="25dp"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/phone_icon"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
 
         <Button
             android:id="@+id/locationBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:drawableStart="@drawable/ic_location"
             android:text="@string/drive_to_location" />
 

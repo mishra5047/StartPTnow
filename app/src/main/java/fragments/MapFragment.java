@@ -160,7 +160,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
                         postItems.clear();
 
-
                         postItems.addAll(arraylist);
 
                         com.google.android.gms.maps.MapFragment mapFragment = (com.google.android.gms.maps.MapFragment) act.getFragmentManager()

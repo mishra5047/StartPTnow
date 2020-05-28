@@ -48,12 +48,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Produc
     @Override
     public void onBindViewHolder(final ProductHolder holder, final int position) {
         final CategoryModel categoryModel = list.get(position);
-        String path = categoryModel.getImage();
-
-        Picasso.with(activity)
-                .load(ConstValue.BASE_URL + "/uploads/admin/category/" + path)
-                .resize(CommonActivity.DpToPx(activity, 80F), CommonActivity.DpToPx(activity, 80F))
-                .into(holder.icon_image);
 
         holder.lbl_title.setText(categoryModel.getTitle());
 
@@ -76,12 +70,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Produc
     }
 
     class ProductHolder extends RecyclerView.ViewHolder {
-        ImageView icon_image;
         TextView lbl_title;
 
         public ProductHolder(View itemView) {
             super(itemView);
-            icon_image = (ImageView) itemView.findViewById(R.id.imageView);
+            // icon_image = (ImageView) itemView.findViewById(R.id.imageView);
             lbl_title = (TextView) itemView.findViewById(R.id.title);
         }
     }
