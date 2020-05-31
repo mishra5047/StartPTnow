@@ -137,19 +137,19 @@
     <string name="is_still_not_verified_please_click_on_verification_link_sent_to_your_email_you_may_check_in_inbox_or_spam_folder">is still not verified please click on verification link sent to your email. You may check in inbox or spam folder.</string>
     <string name="patient_application"><![CDATA[<font color=\'#3dcdad\'>Patient Application</font>]]></string>
     <string name="photo_id">Photo ID</string>
-    <string name="physican_referral" translatable="false">Physican Referral</string>
-    <string name="insurance_card_if_applicable">Insurance Card (If applicable)</string>
+    <string name="physican_referral" translatable="false">Prescription / Physican Referral </string>
+    <string name="insurance_card_if_applicable">Insurance Card</string>
     <string name="a_a_form_auto_accidents"><![CDATA[<font color=\'#3dcdad\'>A & A Form (Auto Accidents)</font>]]></string>
     <string name="pip_application_if_applicable"><![CDATA[<font color=\'#3dcdad\'>PIP Application (If applicable)</font>]]></string>
     <string name="note_you_must_be_contacted_and_all_information_must_be_verified_before_any_appointment_are_confirmed_by_ptsmc_staff">You will be contacted by our staff to verify
     all information prior to your appointment date/time.</string>
     <string name="ptsmc" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PTSMC Patient Application</font>]]></string>
-    <string name="ptsmc_pip" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PIP / LITIGATION PATIENT INFORMATION</font>]]></string>
+    <string name="ptsmc_pip" translatable="false"><![CDATA[<font color=\'#3dcdad\'>PIP Application</font>]]></string>
     <string name="cash_pay" translatable="false"><![CDATA[<font color=\'#3dcdad\'>SELF PAY-PATIENT INFORMATION</font>]]></string>
     <string name="prescription" translatable="false">Prescription / Referral from doctor (if your insurance requires)</string>
     <string name="current_medications" translatable="false">Current Medications</string>
-    <string name="attorney_info" translatable="false"><![CDATA[<font color=\'#3dcdad\'>If Applicable, Attorney Information and A&A Form to be singed</font>]]></string>
-    <string name="ptsmc_wc_apply" translatable="false"><![CDATA[<font color=\'#3dcdad\'>WORKER’S COMPENSATION PATIENT INFORMATION</font>]]></string>
+    <string name="attorney_info" translatable="false">Law Firm / Attorney Information (if applicable)</string>
+    <string name="ptsmc_wc_apply" translatable="false"><![CDATA[<font color=\'#3dcdad\'>Worker’s Comp Application</font>]]></string>
     <string name="adjuster_info" translatable="false">Adjuster Information</string>
     <string name="note_insurance" translatable="false">Note: If you are a Return Patient coming back to us for a different issue/injury, please be sure to update your User Profile so that it reflects the current injury as well as the current coverage type.</string>
     <!-- SERVICES SCREEN -->
@@ -189,7 +189,7 @@
     <string name="spinner_0" translatable="false"><b>Choose Your Insurance Type</b></string>
     <string name="spinner_1" translatable="false"><b>Personal Health Insurance</b></string>
     <string name="spinner_2" translatable="false"><b>Auto Injury(PIP)</b></string>
-    <string name="spinner_3" translatable="false"><b>Workers Compensation /FCE/Work Hardening</b></string>
+    <string name="spinner_3" translatable="false"><b>Workers Comp /FCE/Work Hardening</b></string>
     <string name="spinner_4" translatable="false"><b>Self-Pay / No Insurance</b></string>
     <string name="needed_appo" translatable="false"><b>Items Needed For Your First Appointment</b></string>
 

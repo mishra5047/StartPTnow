@@ -42,14 +42,16 @@ public class BulletTextAdapter extends RecyclerView.Adapter<BulletTextAdapter.Pr
     @Override
     public void onBindViewHolder(final ProductHolder holder, final int position) {
         final BulletTextModel mList = list.get(position);
-
+        holder.number.setText(mList.getNo());
         holder.tv_text.setText(Html.fromHtml(mList.getText()));
         if (!mList.getLink().isEmpty()
                 && (URLUtil.isValidUrl(mList.getLink())
                 || Patterns.WEB_URL.matcher(mList.getLink()).matches())) {
             holder.tv_text.setTextColor(activity.getResources().getColor(R.color.colorPrimary));
+            holder.number.setTextColor(activity.getResources().getColor(R.color.colorPrimary));
         } else {
             holder.tv_text.setTextColor(activity.getResources().getColor(R.color.colorBlack));
+            holder.number.setTextColor(activity.getResources().getColor(R.color.colorBlack));
         }
 
     }
@@ -61,11 +63,12 @@ public class BulletTextAdapter extends RecyclerView.Adapter<BulletTextAdapter.Pr
     }
 
     class ProductHolder extends RecyclerView.ViewHolder {
-        TextView tv_text;
+        TextView tv_text, number;
 
         public ProductHolder(View itemView) {
             super(itemView);
             tv_text = (TextView) itemView.findViewById(R.id.tv_bullet_text);
+            number = itemView.findViewById(R.id.number);
 
             tv_text.setOnClickListener(new View.OnClickListener() {
                 @Override

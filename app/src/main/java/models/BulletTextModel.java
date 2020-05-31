@@ -7,10 +7,16 @@ public class BulletTextModel {
 
     private String text;
     private String link;
+    private String no;
 
-    public BulletTextModel(String text, String link) {
+    public BulletTextModel(String no,String text, String link) {
         this.text = text;
         this.link = link;
+        this.no = no;
+    }
+
+    public String getNo() {
+        return no;
     }
 
     public String getText() {

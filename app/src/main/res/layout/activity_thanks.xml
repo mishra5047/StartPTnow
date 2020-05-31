@@ -134,7 +134,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/xml_button"
                 android:onClick="orderFinish"
-                android:text="@string/countinue_home"
+                android:text="Take Me On Home"
                 android:textColor="@color/colorTextWhite" />
 
             <Button
@@ -145,7 +145,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/xml_button"
                 android:onClick="myOrderActivity"
-                android:text="@string/track_my_order"
+                android:text="My Appointment"
                 android:textColor="@color/colorTextWhite" />
         </LinearLayout>
 

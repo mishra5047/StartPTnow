@@ -5,11 +5,10 @@
     android:layout_marginBottom="@dimen/padding_5"
     android:orientation="horizontal">
 
-    <View
-        android:layout_width="8dp"
-        android:layout_height="8dp"
-        android:background="@drawable/xml_dot_cyan"
-        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/tv_bullet_text"
