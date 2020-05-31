@@ -115,6 +115,7 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             bulletTextModelArrayList.add(new BulletTextModel(("REGULAR PATIENT INFORMATION"), "https://startptnow.com/wp-content/uploads/2019/01/REGULAR-PATIENT-INFORMATION-medical-updated.pdf"));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.photo_id), ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.insurance_card_if_applicable), ""));
+            bulletTextModelArrayList.add(new BulletTextModel("List Of Current Medication", ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.prescription), ""));
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
@@ -129,8 +130,8 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             ArrayList<BulletTextModel> bulletTextModelArrayList = new ArrayList<>();
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.ptsmc_pip), "https://startptnow.com/wp-content/uploads/2019/01/PIP-LITIGATION-PATIENT-INFORMATION-medical-updated.pdf"));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.photo_id), ""));
+            bulletTextModelArrayList.add(new BulletTextModel("List Of Current Medication", ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.physican_referral), ""));
-            bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.current_medications), ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.attorney_info), ""));
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
@@ -145,8 +146,8 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             ArrayList<BulletTextModel> bulletTextModelArrayList = new ArrayList<>();
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.ptsmc_wc_apply), "https://startptnow.com/wp-content/uploads/2019/01/WORKERS-COMPENSATION-PATIENT-INFORMATION-medical-updated.pdf"));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.photo_id), ""));
+            bulletTextModelArrayList.add(new BulletTextModel("List Of Current Medications", ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.physican_referral), ""));
-            bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.current_medications), ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.adjuster_info), ""));
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);
@@ -161,7 +162,7 @@ public class ThanksActivity extends CommonActivity implements AdapterView.OnItem
             ArrayList<BulletTextModel> bulletTextModelArrayList = new ArrayList<>();
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.cash_pay), "https://startptnow.com/wp-content/uploads/2019/01/SELF-PAY-PATIENT-INFORMATION-medical-updated.pdf"));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.photo_id), ""));
-            bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.current_medications), ""));
+            bulletTextModelArrayList.add(new BulletTextModel("List Of Current Medications", ""));
             bulletTextModelArrayList.add(new BulletTextModel(getResources().getString(R.string.physican_referral), ""));
             rv_point.setLayoutManager(new LinearLayoutManager(this));
             BulletTextAdapter bulletTextAdapter = new BulletTextAdapter(this, bulletTextModelArrayList);

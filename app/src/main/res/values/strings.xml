@@ -187,10 +187,10 @@
 
 
     <string name="spinner_0" translatable="false"><b>Choose Your Insurance Type</b></string>
-    <string name="spinner_1" translatable="false"><b>Commercial Insurance</b></string>
-    <string name="spinner_2" translatable="false"><b>Personal Injury(PIP)/ Auto Injury</b></string>
+    <string name="spinner_1" translatable="false"><b>Personal Health Insurance</b></string>
+    <string name="spinner_2" translatable="false"><b>Auto Injury(PIP)</b></string>
     <string name="spinner_3" translatable="false"><b>Workers Compensation /FCE/Work Hardening</b></string>
-    <string name="spinner_4" translatable="false"><b>Cash Pay / No Insurance</b></string>
+    <string name="spinner_4" translatable="false"><b>Self-Pay / No Insurance</b></string>
     <string name="needed_appo" translatable="false"><b>Items Needed For Your First Appointment</b></string>
 
 </resources>
